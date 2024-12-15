@@ -1,0 +1,148 @@
+body{
+  background-image: url(../img/latarputihh.avif);
+  background-size: cover;
+  font-family: 'Poppins';
+}
+
+/* Banner Container */
+.custom-banner {
+    
+    text-align: center; 
+    padding: 0; 
+    height: 90vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    position: relative; 
+    overflow: hidden; 
+  }
+  
+  
+  .main-text,
+  .sub-text {
+    font-family: 'Poppins';
+    font-size: 6vw; 
+    font-weight: 700; 
+    text-transform: uppercase; 
+    letter-spacing: 10px; 
+    margin: 0; 
+    position: absolute; 
+    opacity: 0; 
+    animation: fadeInOut 8s infinite; 
+    text-shadow: 0 0 25px;
+  }
+  
+ 
+  .main-text {
+    animation-delay: 0s; 
+  }
+  
+  
+  .sub-text {
+    animation-delay: 4s; 
+  }
+  
+ 
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0; 
+    }
+    50% {
+      opacity: 1; 
+    }
+    
+    100% {
+      opacity: 0; 
+    }
+  }
+ 
+
+/* Styling kustom untuk Divisi HMIF */ 
+  .divisi-card {
+    background-color: rgb(0, 0, 0, 0.3);
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease-in-out, box-shadow 0.3s ease;
+    margin-right: -10px;  /* Menjaga kartu agar rapat */
+    margin-left: -10px;   /* Menjaga kartu agar rapat */
+    z-index: 1;           /* Menjaga kartu tetap di atas */
+  }
+  
+  .divisi-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  
+  .divisi-card p {
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+  }
+  
+  .divisi-card:hover {
+    transform: scale(1.1);  /* Sedikit terangkat saat di hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    
+    z-index: 2;  /* Kartu yang terhover akan terlihat lebih atas */
+  }
+
+  .divisi-card:hover h3, 
+.divisi-card:hover p {
+    color: #001A6E; /* Ubah warna teks menjadi biru saat hover */
+}
+  
+  /* Responsif untuk perangkat kecil */
+  @media (max-width: 768px) {
+    .divisi-card {
+      margin-top: 20px;
+    }
+  }
+  
+  .about {
+    font-family: "Poppins";
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+    font-family: Poppins;
+    padding-top: 50px;
+    font-size: x-large;
+    
+  }
+  
+  /* Container with red border */
+  .about-highlights {
+    font-family: "Poppins";
+    padding: 10px;
+    
+ 
+    margin-right: auto; /* Tengahkan sisa ruang */
+    font-size: larger;
+    line-height: 1.5; /* Menambahkan ruang antar baris */
+    text-align: justify; /* Tetap rata kiri */
+}
+
+
+/* Title styling */
+.title {
+    font-size: 1.5em;
+    color: #080808; /* Navy Blue */
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Buat spasi seimbang antara teks dan garis */
+}
+
+.title-line {
+    flex-grow: 1;
+    height: 3px;
+    background-color: #001A6E;
+    margin-left: 10px;
+}
+
+  
+
+  

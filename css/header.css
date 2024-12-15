@@ -1,0 +1,101 @@
+.navbar {
+    background: rgb(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0; /* Posisi navbar tetap di atas */
+    left: 0; /* Menempel di sisi kiri */
+    width: 100%;
+    z-index: 5;
+}
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease; 
+    border-bottom: 3px solid transparent;
+    font-weight: 500;
+}
+
+.navbar ul li a:hover, .navbar ul li a:active, .navbar ul li a:focus {
+    color: #001A6E; 
+    border-bottom: 3px solid #001A6E; 
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block; /* Menampilkan dropdown */
+    margin-top: 0; /* Menghilangkan jeda default */
+  }
+  
+  /* Tambahkan transisi agar terlihat lebih halus */
+  .nav-item.dropdown .dropdown-menu {
+    background-color: rgb(0, 0, 0, 0.3);
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 0; /* Default tidak terlihat */
+    visibility: hidden;
+    border: none;
+  }
+  
+  .nav-item.dropdown:hover .dropdown-menu {
+
+    opacity: 1; /* Terlihat saat hover */
+    visibility: visible;
+  }
+
+  .dropdown-item {
+  color: #FFFFFF; /* Warna teks */
+  padding: 8px 15px; /* Memberi jarak horizontal agar tulisan tidak sampai ke ujung */
+  border-radius: 3px; /* Membuat sedikit melengkung */
+}
+
+/* Hover effect pada item */
+.dropdown-item:hover {
+  background-color: rgb(0, 0, 0, 0.1); /* Warna latar saat hover */
+  
+
+  transition: background-color 0.3s ease; /* Animasi hover */
+}
+/* Navbar on small screens */
+@media (max-width: 767px) {
+  .navbar {
+      background-color: rgba(0, 0, 0, 0.3); /* Add background to navbar */
+  }
+
+  .navbar-nav .nav-item {
+      width: 100%; /* Ensure nav items take full width */
+  }
+
+  .navbar-nav .nav-link {
+      padding: 10px; /* Add padding to links for easier clicking */
+  }
+
+  .navbar-collapse {
+      display: block; /* Ensure the navbar items are stacked vertically */
+  }
+  
+  .navbar-toggler {
+      border-color: #fff; /* Customize the toggle button color */
+  }
+}
+
+/* Default for large screens (no changes needed) */
+@media (min-width: 768px) {
+  .navbar-collapse {
+      display: flex; /* Keep navbar items in a row */
+  }
+}
+
+.nama {
+    color: #001A6E;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 700;
+    transition: 0.3s ease;
+    text-shadow: 0 0 25px;
+}
+.nama:hover{
+    transform: scale(1.1);
+    color: #001A6E;
+}
+
+.nama span{
+    color: white;
+}

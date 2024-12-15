@@ -1,0 +1,93 @@
+body{
+    background-image: url(../img/latarputihh.avif);
+    background-size: cover;
+    font-family: 'Poppins';
+}
+
+.custom-banner {
+    height: 80vh; 
+    position: relative; 
+    overflow: hidden; 
+  }
+  
+  
+  .main-text {
+    font-size: 6vw; 
+    font-weight: 700;  
+    letter-spacing: 10px;
+    overflow: hidden; 
+    position: absolute;
+    text-align: center; 
+    text-shadow: 0 0 25px;
+    white-space: nowrap;  
+    width: 0;  
+    animation: typing 4s steps(26) 1s forwards, blink 0.5s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 26ch; /* Adjust width to match the total number of characters */
+    }
+}
+
+@keyframes blink {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #001A6E;
+    }
+}
+
+
+
+
+
+.about {
+    font-family: "Poppins";
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+    font-family: Poppins;
+    padding-top: 50px;
+    font-size: x-large;
+    
+  }
+  
+  /* Container with red border */
+  .about-highlights {
+    font-family: "Poppins";
+    padding: 10px;
+    
+ 
+    margin-right: auto; /* Tengahkan sisa ruang */
+    font-size: larger;
+    line-height: 1.5; /* Menambahkan ruang antar baris */
+    text-align: justify; /* Tetap rata kiri */
+}
+
+
+/* Title styling */
+.title {
+    font-size: 1.5em;
+    color: #080808; /* Navy Blue */
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Buat spasi seimbang antara teks dan garis */
+}
+
+.title-line {
+    flex-grow: 1;
+    height: 3px;
+    background-color: #001A6E;
+    margin-left: 10px;
+}
+
+  
+
+  
